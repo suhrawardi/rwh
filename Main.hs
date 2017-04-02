@@ -6,6 +6,14 @@
 module Main where
 
 import WordCounter
+import SimpleJSON
+import PrettyJSON
+import Prettify
+
+-- Count Words
+-- main :: IO ()
+-- main = countWords
 
 main :: IO ()
-main = countWords
+main = putStrLn (pretty 20 value)
+       where value = renderJValue (JObject [("foo", JNumber 1), ("bar", JBool False)])
