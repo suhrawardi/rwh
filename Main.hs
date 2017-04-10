@@ -9,6 +9,7 @@ import WordCounter
 import SimpleJSON
 import PrettyJSON
 import Prettify
+import GlobRegex
 
 -- Count Words
 -- main :: IO ()

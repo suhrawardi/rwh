@@ -12,4 +12,5 @@ Executable rwh
   Main-is:           Main.hs
   Build-Depends:     base >= 3 && < 5,
                      ansi-terminal,
-                     process
+                     process,
+                     regex-posix
