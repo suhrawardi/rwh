@@ -10,11 +10,16 @@ import SimpleJSON
 import PrettyJSON
 import Prettify
 import Glob
+import Renaming
 
 -- Count Words
 -- main :: IO ()
 -- main = countWords
 
-main :: IO ()
-main = putStrLn (pretty 20 value)
-       where value = renderJValue (JObject [("foo", JNumber 1), ("bar", JBool False)])
+-- main :: IO ()
+-- main = putStrLn (pretty 20 value)
+--        where value = renderJValue (JObject [("foo", JNumber 1), ("bar", JBool False)])
+
+main :: IO [FilePath]
+main = do
+    renameExt "*.sh" ".ssh"
